@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
-# Copyright (C) 2018 Carlos Duarte
-# License: GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
+
+#Copyright(C)| Carlos Duarte
+#Based on    | xquercus code, in add-on "Load Balanced Scheduler"
+#License     | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
+#Source in   | https://github.com/cjdduarte/FreeWeekend
 
 import sys
 import anki
@@ -10,22 +13,21 @@ from anki import version
 from anki.sched import Scheduler
 
 from aqt.utils import tooltip
-import os
+#import os
 from random import *
 
-dias_semana = [6] #0=SEG, 1=TER ...6=DOM (-1 ANULA)
-log_tooltip = True
+days_week = [6] #0=Monday|1=Tuesday|2=Wednesday|3=Thursday|4=Friday|5=Saturday|6=Sunday|-1=NULL)
+log_tooltip = False
 
 seed()
-
+'''
 this_script_dir = os.path.dirname(__file__)
 user_files_dir = os.path.join(this_script_dir, 'datas.txt')
 with open(user_files_dir, 'r', encoding='utf-8') as f:
-    datas_arquivo = [line.strip() for line in f]
+    datas_arquivo = [line.strip() for line in f]'''
 #-------------------------------------------
 
 def load_balanced_ivl(self, ivl):
-    """Return the (largest) interval that has the least number of cards and falls within the 'fuzz'"""
     orig_ivl = int(ivl)
     min_ivl, max_ivl = self._fuzzIvlRange(orig_ivl)
     IvlRangeOri = []
@@ -40,7 +42,8 @@ def load_balanced_ivl(self, ivl):
     removed_all=True
     for check_ivl in range(min_ivl, max_ivl + 1):
         data = datetime.datetime.now() + datetime.timedelta(days=check_ivl)
-        if (data.weekday() not in dias_semana and data.strftime("%d/%m/%Y") not in datas_arquivo):
+        if (data.weekday() not in days_week):
+        #if (data.weekday() not in days_week and data.strftime("%d/%m/%Y") not in datas_arquivo):
             removed_all=False
         else:
             IvlRange.remove(check_ivl)
