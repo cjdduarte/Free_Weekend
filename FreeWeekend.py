@@ -17,7 +17,7 @@ from aqt.utils import tooltip
 from random import *
 
 #-------------Configuration------------------
-days_week   = [6]       #0=Monday|1=Tuesday|2=Wednesday|3=Thursday|4=Friday|5=Saturday|6=Sunday|-1=NULL)
+days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
 log_tooltip = False     #True or False
 #-------------Configuration------------------
 
@@ -27,7 +27,6 @@ this_script_dir = os.path.dirname(__file__)
 user_files_dir = os.path.join(this_script_dir, 'datas.txt')
 with open(user_files_dir, 'r', encoding='utf-8') as f:
     datas_arquivo = [line.strip() for line in f]'''
-#-------------------------------------------
 
 def load_balanced_ivl(self, ivl):
     orig_ivl = int(ivl)
@@ -41,8 +40,8 @@ def load_balanced_ivl(self, ivl):
         IvlRange.append(k)
 
     best_ivl = randint(min_ivl, max_ivl)
-
     removed_all=True
+
     for check_ivl in range(min_ivl, max_ivl + 1):
         data = datetime.datetime.now() + datetime.timedelta(days=check_ivl)
         if (data.weekday() not in days_week):
@@ -51,6 +50,7 @@ def load_balanced_ivl(self, ivl):
         else:
             IvlRange.remove(check_ivl)
             ignored_days.append(data.strftime("%Y/%m/%d"))
+    
     ignored_days = ', '.join(ignored_days)
 
     if removed_all:
@@ -65,10 +65,8 @@ def load_balanced_ivl(self, ivl):
 
     return best_ivl
 
-
 # Patch Anki 2.0 and Anki 2.1 default scheduler
 anki.sched.Scheduler._fuzzedIvl = load_balanced_ivl
-
 
 # Patch Anki 2.1 experimental v2 scheduler
 if version.startswith("2.1"):
