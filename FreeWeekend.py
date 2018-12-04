@@ -62,6 +62,9 @@ def load_balanced_ivl(self, ivl):
         #mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
         mensagem = 'Ignored days: ' + str(ignored_days)
         tooltip(mensagem, period=2000)
+    else log_tooltip and removed_all:
+        mensagem = 'Excluded week day used! Range Fuzz too small.'
+        tooltip(mensagem, period=2000)
 
     return best_ivl
 
