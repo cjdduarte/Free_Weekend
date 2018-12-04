@@ -18,7 +18,7 @@ from random import *
 
 #-------------Configuration------------------
 days_week = [6] #0=Monday|1=Tuesday|2=Wednesday|3=Thursday|4=Friday|5=Saturday|6=Sunday|-1=NULL)
-log_tooltip = False
+log_tooltip = True
 #-------------Configuration------------------
 
 seed()
