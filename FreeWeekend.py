@@ -50,7 +50,7 @@ def load_balanced_ivl(self, ivl):
         else:
             IvlRange.remove(check_ivl)
             ignored_days.append(data.strftime("%Y/%m/%d"))
-    
+
     ignored_days = ', '.join(ignored_days)
 
     if removed_all:
