@@ -26,11 +26,11 @@ Change the values ​​in the source code for your need.<br>
 The default installation value is to skip <b>Sunday</b> and the log message is <b>disabled</b>.<br>
 You can enter more than one day of the week, separated by commas, but <b>remember</b> that this can overwhelm the other days.<br>
 
-<code>-------------Configuration------------------
+<code>-------------Configuration------------------</code>
 
-days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
+<code>days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
 
-log_tooltip = False     #True or False
+<code>log_tooltip = False     #True or False
 
 -------------Configuration------------------</code>
 
