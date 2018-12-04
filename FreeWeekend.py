@@ -17,8 +17,8 @@ from aqt.utils import tooltip
 from random import *
 
 #-------------Configuration------------------
-days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
-log_tooltip = False     #True or False
+days_week   = [6]      #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
+log_tooltip = False    #True|False
 #-------------Configuration------------------
 
 seed()
@@ -58,12 +58,12 @@ def load_balanced_ivl(self, ivl):
     else:
         best_ivl = choice(IvlRange)
 
-    if log_tooltip and ignored_days:
+    if  log_tooltip and removed_all:
+        mensagem = 'Excluded week day used! Range Fuzz too small.'
+        tooltip(mensagem, period=3000)
+    elif log_tooltip and ignored_days:
         #mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
         mensagem = 'Ignored days: ' + str(ignored_days)
-        tooltip(mensagem, period=2000)
-    else log_tooltip and removed_all:
-        mensagem = 'Excluded week day used! Range Fuzz too small.'
         tooltip(mensagem, period=2000)
 
     return best_ivl
