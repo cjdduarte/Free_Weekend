@@ -1,9 +1,6 @@
 <b>Bug Report:</b> https://github.com/cjdduarte/FreeWeekend
-
 <b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.
-
 <b>Important:</b> The addon does not change past schedules, only new schedules.
-
 <b>About:</b>
 
 Select Sunday if you do not want to study on this day or any other day of the week and this addon will select another day in the rescheduling.
@@ -34,7 +31,7 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 
 <code>#-------------Configuration------------------
 
-days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
+days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
 
 log_tooltip = False     #True or False
 
@@ -58,8 +55,10 @@ Source in | https://github.com/cjdduarte/FreeWeekend
 
 v1.2 - 2018-12-04
 - Added new log message when fuzz does not satisfy required condition
+
 v1.1  - 2018-12-04
 - Added log to show ignored days
+
 v1.0 - 2018-12-03
 - Initial Release
 
