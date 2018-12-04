@@ -1,4 +1,4 @@
-<b>Bug Report:</b> https://github.com/cjdduarte/FreeWeekend
+<b>Bug Report:</b> https://github.com/cjdduarte/FreeWeekend<br>
 <b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.
 <b>Important:</b> The addon does not change past schedules, only new schedules.
 <b>About:</b>
