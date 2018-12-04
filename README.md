@@ -26,11 +26,10 @@ Change the values ​​in the source code for your need.<br>
 The default installation value is to skip <b>Sunday</b> and the log message is <b>disabled</b>.<br>
 You can enter more than one day of the week, separated by commas, but <b>remember</b> that this can overwhelm the other days.<br>
 
-<code>#-------------Configuration------------------<br>
+<code>-------------Configuration------------------<br>
 days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore<br>
 log_tooltip = False     #True or False
-#-------------Configuration------------------
-</code>
+-------------Configuration------------------</code>
 
 Enabling log, the addon will show on the screen which days are being ignored when replying to the card.<br>
 Or it will display a message that the fuzz range has not met the required minimum condition.
@@ -44,12 +43,12 @@ Source in - https://github.com/cjdduarte/FreeWeekend
 
 <b> #### Change Log:</b><br>
 v1.2 - 2018-12-04<br>
-- Added new log message when fuzz does not satisfy required condition<br>
+Added new log message when fuzz does not satisfy required condition<br>
 v1.1  - 2018-12-04<br>
-- Added log to show ignored days<br>
+Added log to show ignored days<br>
 v1.0 - 2018-12-03<br>
-- Initial Release
+Initial Release
 
 <b> #### To Do:</b><br>
-- implement text file to select specific days (Example: holidays, trips, etc ...):<br>
-- to implement parameterization in Anki:
+implement text file to select specific days (Example: holidays, trips, etc ...):<br>
+to implement parameterization in Anki:
