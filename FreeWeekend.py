@@ -61,7 +61,7 @@ def load_balanced_ivl(self, ivl):
     if log_tooltip and ignored_days:
         #mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
         mensagem = 'Ignored days: ' + str(ignored_days)
-        tooltip(mensagem, period=5000)
+        tooltip(mensagem, period=2000)
 
     return best_ivl
 
