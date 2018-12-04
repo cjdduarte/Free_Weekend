@@ -32,6 +32,7 @@ def load_balanced_ivl(self, ivl):
     min_ivl, max_ivl = self._fuzzIvlRange(orig_ivl)
     IvlRangeOri = []
     IvlRange = []
+    ignored_days = []
 
     for k in range(min_ivl, max_ivl + 1):
         IvlRangeOri.append(k)
@@ -47,14 +48,17 @@ def load_balanced_ivl(self, ivl):
             removed_all=False
         else:
             IvlRange.remove(check_ivl)
+            ignored_days.append(data.strftime("%Y/%m/%d"))
+    ignored_days = ', '.join(ignored_days)
 
     if removed_all:
         best_ivl = choice(IvlRangeOri)
     else:
         best_ivl = choice(IvlRange)
 
-    if log_tooltip:
-        mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
+    if log_tooltip and ignored_days:
+        #mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
+        mensagem = 'Ignored days: ' + str(ignored_days)
         tooltip(mensagem, period=5000)
 
     return best_ivl
