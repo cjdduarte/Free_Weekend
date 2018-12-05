@@ -45,11 +45,17 @@ License - GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html<br
 Source in - https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b><br>
+
 v1.2 - 2018-12-04<br>
+
 Added new log message when fuzz does not satisfy required condition<br>
+
 v1.1  - 2018-12-04<br>
+
 Added log to show ignored days<br>
+
 v1.0 - 2018-12-03<br>
+
 Initial Release
 
 <b> #### To Do:</b><br>
