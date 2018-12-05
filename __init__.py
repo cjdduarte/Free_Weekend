@@ -1,1 +1,1 @@
-from . import FreeWeekend
+from . import Free_Weekend

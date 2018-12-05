@@ -16,8 +16,13 @@ from aqt.utils import tooltip
 #import os
 from random import *
 
+
+#config = mw.addonManager.getConfig(__name__)
+#a = config.get('days_week')
+#tooltip(a, period=2000)
+
 #-------------Configuration------------------
-days_week   = [6]      #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
+days_week   = [6]      #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
 log_tooltip = False    #True|False
 #-------------Configuration------------------
 
