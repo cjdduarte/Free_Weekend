@@ -59,5 +59,7 @@ v1.0 - 2018-12-03<br>
 Initial Release
 
 <b> #### To Do:</b><br>
+
 implement text file to select specific days (Example: holidays, trips, etc ...):<br>
+
 to implement parameterization in Anki:
