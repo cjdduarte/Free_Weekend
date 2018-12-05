@@ -64,11 +64,15 @@ Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
 v1.3 - 2018-12-05
+
 - Added parameterization in the Addon configuration (Anki 2.1)
+
 v1.2 - 2018-12-04
 - Added new log message when fuzz does not satisfy required condition
+
 v1.1  - 2018-12-04
 - Added log to show ignored days
+
 v1.0 - 2018-12-03
 - Initial Release
 
