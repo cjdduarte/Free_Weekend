@@ -2,7 +2,9 @@
 
 <b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.
 
-<b>Important:</b> The addon does not change past schedules, only new schedules.
+<b>Information 1:</b> The addon does not change past schedules, only new schedules.
+
+<b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
 <b>2018-12-05 - Added parameterization in the Addon configuration (Anki 2.1)</b>
