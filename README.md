@@ -1,4 +1,4 @@
-<b>Bug Report:</b> https://github.com/cjdduarte/FreeWeekend<br>
+<b>Bug Report:</b> https://github.com/cjdduarte/Free_Weekend<br>
 <b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.<br>
 <b>Important:</b> The addon does not change past schedules, only new schedules.
 
@@ -42,7 +42,7 @@ Or it will display a message that the fuzz range has not met the required minimu
 Copyright(C) -  Carlos Duarte<br>
 Based on - xquercus code, in add-on "Load Balanced Scheduler"<br>
 License - GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html<br>
-Source in - https://github.com/cjdduarte/FreeWeekend
+Source in - https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b><br>
 v1.2 - 2018-12-04<br>
