@@ -77,4 +77,4 @@ v1.0 - 2018-12-03
 - Initial Release
 
 <b> #### To Do:</b>
-- implement parameter to select specific days (Example: holidays, trips, etc ...):
+- implement parameter to select specific days (Example: holidays, trips, etc ...): 
