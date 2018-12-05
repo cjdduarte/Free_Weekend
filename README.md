@@ -1,5 +1,7 @@
 <b>Bug Report:</b> https://github.com/cjdduarte/Free_Weekend
+
 <b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.
+
 <b>Important:</b> The addon does not change past schedules, only new schedules.
 
 <b>#### New Change:</b>
@@ -26,18 +28,25 @@ If the fuzz range is too small or does not exist (review less than 3 days) to sa
 
 <b>Configuration:</b>
 Change the values ​​in config module code for your need.
+
 The default installation value is to skip <b>Sunday</b> and the log message is <b>disabled</b>.
+
 You can enter more than one day of the week, separated by commas, but <b>remember</b> that this can overwhelm the other days.
 
 <b>Version 2.1</b>
+
 <img src="https://i.ibb.co/Xtk0JLq/image.png" alt="Config">
 
 <img src="https://i.ibb.co/zP49j9G/image.png" alt="Configuration">
 
 <b>Version 2.0</b>
+
 <code>#-------------Configuration------------------
+
 days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
+
 log_tooltip = False     #True or False
+
 #-------------Configuration------------------</code>
 
 Enabling log, the addon will show on the screen which days are being ignored when replying to the card.
@@ -46,8 +55,11 @@ Or it will display a message that the fuzz range has not met the required minimu
 <img src="https://i.ibb.co/h9HX2FX/ignored-days.png" alt="ignored-days">
 
 Copyright(C)| Carlos Duarte
+
 Based on | xquercus code, in add-on "Load Balanced Scheduler"
+
 License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
+
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
