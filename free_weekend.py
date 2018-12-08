@@ -20,8 +20,9 @@ config = mw.addonManager.getConfig(__name__)
 #-------------Configuration------------------
 #days_week   = [6]      #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
 #log_tooltip = False    #True|False
-days_week   = config['days_week']
-log_tooltip = config['log_tooltip']
+days_week       = config['days_week']
+log_tooltip     = config['log_tooltip']
+specific_days   = config['specific_days']
 #-------------Configuration------------------
 
 seed()
@@ -47,8 +48,8 @@ def load_balanced_ivl(self, ivl):
 
     for check_ivl in range(min_ivl, max_ivl + 1):
         data = datetime.datetime.now() + datetime.timedelta(days=check_ivl)
-        if (data.weekday() not in days_week):
-        #if (data.weekday() not in days_week and data.strftime("%d/%m/%Y") not in datas_arquivo):
+        #if (data.weekday() not in days_week):
+        if (data.weekday() not in days_week and data.strftime("%Y/%m/%d") not in specific_days):
             removed_all=False
         else:
             IvlRange.remove(check_ivl)
