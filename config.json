@@ -1,5 +1,5 @@
 {
 	"days_week": [6],
-	"log_tooltip": false,
+	"log_tooltip": 0,
 	"specific_days": ["9999/12/31"]
 }

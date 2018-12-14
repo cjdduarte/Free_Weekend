@@ -16,10 +16,24 @@ from aqt.utils import tooltip
 #import os
 from random import *
 
-config = mw.addonManager.getConfig(__name__)
 #-------------Configuration------------------
-#days_week   = [6]      #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore
-#log_tooltip = False    #True|False
+try:
+    config = mw.addonManager.getConfig(__name__)
+except AttributeError:
+    config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
+'''
+if getattr(mw.addonManager, "getConfig", None): #Anki 2.1
+    config = mw.addonManager.getConfig(__name__)
+    tooltip("Anki 2.1", period=3000)
+else:  #Anki 2.0
+    config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
+    tooltip("Anki 2.0", period=3000)
+'''
+#-------------Configuration (Anki 2.0) ------------------
+#days_week      = [6]      #0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun, -1=Ignore
+#log_tooltip    = 0        #"0=OFF, 1=Basic, 2=More"
+#specific_days  = ["YYYY/MM/DD", "YYYY/MM/DD"] - Specific days must have quotation marks
+#-------------Configuration (Anki 2.0) ------------------
 days_week       = config['days_week']
 log_tooltip     = config['log_tooltip']
 specific_days   = config['specific_days']
@@ -62,13 +76,35 @@ def load_balanced_ivl(self, ivl):
     else:
         best_ivl = choice(IvlRange)
 
-    if  log_tooltip and removed_all:
+    '''if  log_tooltip and removed_all:
         mensagem = 'Excluded week day used! Range Fuzz too small.'
         tooltip(mensagem, period=3000)
     elif log_tooltip and ignored_days:
         #mensagem = 'orig_ivl = ' + str(orig_ivl) + ' min_ivl = ' + str(min_ivl) + ' max_ivl = ' + str(max_ivl) + ' best_ivl = ' + str(best_ivl)
         mensagem = 'Ignored days: ' + str(ignored_days)
-        tooltip(mensagem, period=2000)
+        tooltip(mensagem, period=2000)'''
+    #-------------Log------------------
+    log_orig_ivl    = 'orig='    + (datetime.datetime.now() + datetime.timedelta(days=orig_ivl)).strftime("%Y/%m/%d") + '   '
+    log_min_ivl     = 'min='     + (datetime.datetime.now() + datetime.timedelta(days=min_ivl)).strftime("%Y/%m/%d")  + '   '
+    log_max_ivl     = 'max='     + (datetime.datetime.now() + datetime.timedelta(days=max_ivl)).strftime("%Y/%m/%d")  + '   '
+    log_best_ivl    = 'sel='     + (datetime.datetime.now() + datetime.timedelta(days=best_ivl)).strftime("%Y/%m/%d") + '   '
+    log_ign_days    = 'ignored=' + str(ignored_days)
+
+    if  removed_all:
+        if log_tooltip == 1:
+            mensagem = 'ignored=All days used! Range Fuzz too small.'
+            tooltip(mensagem, period=3000)
+        elif log_tooltip == 2:
+            mensagem = log_min_ivl + log_max_ivl + log_best_ivl + 'ignored=All days used! Range Fuzz too small.'
+            tooltip(mensagem, period=4000)
+    elif log_tooltip and ignored_days:
+        if log_tooltip == 1:
+            mensagem = log_ign_days
+            tooltip(mensagem, period=3000)
+        elif log_tooltip == 2:
+            mensagem = log_min_ivl + log_max_ivl + log_best_ivl + log_ign_days
+            tooltip(mensagem, period=4000)
+    #-------------Log------------------
 
     return best_ivl
 
