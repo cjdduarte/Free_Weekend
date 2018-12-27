@@ -7,7 +7,7 @@
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>2018-12-05 - Added parameterization in the Addon configuration (Anki 2.1)</b>
+<b>- add parameters so that specific groups of decks are not affected by this addon</b>
 
 <b>About:</b>
 Select Sunday if you do not want to study on this day or any other day of the week and this addon will select another day in the rescheduling.
@@ -44,12 +44,20 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 <b>Version 2.0</b>
 
 <code>#-------------Configuration------------------
+days_week      = 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun, -1=Ignore
 
-days_week   = [6]       #[0]=Monday|[1]=Tuesday|[2]=Wednesday|[3]=Thursday|[4]=Friday|[5]=Saturday|[6]=Sunday|[-1]=Ignore)
+log_tooltip    = 0=OFF, 1=Basic, 2=More"
 
-log_tooltip = False     #True or False
+specific_days  = ["YYYY/MM/DD", "YYYY/MM/DD"] - Specific days must have quotation marks
 
+Modify here
+
+config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
 #-------------Configuration------------------</code>
+
+<b>It is now possible specific groups of decks are not affected by this addon.</b>
+
+<img src="https://i.ibb.co/SrYbWDr/image.png" alt="Config">
 
 Enabling log, the addon will show on the screen which days are being ignored when replying to the card.
 Or it will display a message that the fuzz range has not met the required minimum condition.
@@ -65,8 +73,18 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
-v1.3 - 2018-12-05
+v1.6 - 2018-12-26
+- add parameters so that specific groups of decks are not affected by this addon
 
+v1.5 - 2018-12-14
+- More log options
+- Added parameter for specific days (Anki 2.0)
+- Unified code Anki 2.1 and Anki 2.0
+
+v1.4 - 2018-12-08
+- Added parameter for specific days (Anki 2.1)
+
+v1.3 - 2018-12-05
 - Added parameterization in the Addon configuration (Anki 2.1)
 
 v1.2 - 2018-12-04
@@ -79,4 +97,4 @@ v1.0 - 2018-12-03
 - Initial Release
 
 <b> #### To Do:</b>
-- implement parameter to select specific days (Example: holidays, trips, etc ...): 
+- add limit for deleted days.
