@@ -1,6 +1,6 @@
 <b>Bug Report:</b> https://github.com/cjdduarte/Free_Weekend
 
-<b>Warning:</b> this addon may conflict with other addons that use Anki's scheduler.
+<b>Warning: this addon may conflict with other addons that use Anki's scheduler (load balancer, Load Balanced Scheduler, and so on).</b>
 
 <b>Information 1:</b> The addon does not change past schedules, only new schedules.
 
@@ -10,6 +10,7 @@
 <b>- add parameters so that specific groups of decks are not affected by this addon</b>
 
 <b>About:</b>
+
 Select Sunday if you do not want to study on this day or any other day of the week and this addon will select another day in the rescheduling.
 You will leave this day free for other tasks or rest.
 
@@ -44,6 +45,7 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 <b>Version 2.0</b>
 
 <code>#-------------Configuration------------------
+
 days_week      = 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun, -1=Ignore
 
 log_tooltip    = 0=OFF, 1=Basic, 2=More"
@@ -53,6 +55,7 @@ specific_days  = ["YYYY/MM/DD", "YYYY/MM/DD"] - Specific days must have quotatio
 Modify here
 
 config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
+
 #-------------Configuration------------------</code>
 
 <b>It is now possible specific groups of decks are not affected by this addon.</b>
@@ -73,6 +76,7 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
 v1.6 - 2018-12-26
 - add parameters so that specific groups of decks are not affected by this addon
 
