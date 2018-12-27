@@ -150,10 +150,10 @@ def load_balanced_ivl(sched, ivl, _old):
     #--------Deck ignored by parameter--------
     ignore_deck = False
     card = mw.reviewer.card
-    if not card: return True
-    conf=sched.col.decks.confForDid(card.odid or card.did)
-    if conf.get('DisableFW',0) == 2:
-        ignore_deck = True
+    if card:
+        conf=sched.col.decks.confForDid(card.odid or card.did)
+        if conf.get('DisableFW',0) == 2:
+            ignore_deck = True
     #--------Deck ignored by parameter--------
 
     if removed_all or ignore_deck:
