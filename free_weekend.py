@@ -92,15 +92,25 @@ with open(user_files_dir, 'r', encoding='utf-8') as f:
     vLayoutDF.addItem(spacerItem1)
     self.tabWidget.addTab(tabDF, "Free Weekend")'''
 
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
 def setup_ui(self, Dialog):
 
-    grid = QtWidgets.QGridLayout()
+    r=self.gridLayout_3.rowCount()
+    gridLayout_3 = QtWidgets.QGridLayout()
 
-    self.DisableFW = QtWidgets.QCheckBox(self.tab_5)
+    self.DisableFW = QtWidgets.QCheckBox(self.tab_3)
+    self.DisableFW.setObjectName(_fromUtf8("DisableFW"))
     self.DisableFW.setText(_('Disable Free Weekend (It will affect all decks that belong to this group of options)'))
-    grid.addWidget(self.DisableFW, 0, 0, 1, 1)
+    self.DisableFW.setDisabled(0)
+    gridLayout_3.addWidget(self.DisableFW, r, 0, 1, 3)
+    r+=1
 
-    self.verticalLayout_6.insertLayout(1, grid)
+    self.verticalLayout_4.insertLayout(1, gridLayout_3)
 
 def load_conf(self):
     f = self.form
