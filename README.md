@@ -27,6 +27,7 @@ An Anki Fuzz based range will be used to avoid impacting Anki's algorithm as des
 - Review in 90 days: Choose between days 86 and 94.
 - Cards you forgot, and return within 2 days it does not choose another day.
 
+<b>Exceptions:</b>
 If the fuzz range is too small or does not exist (review less than 3 days) to satisfy the parameter condition, the day of the week may be selected for review of the card.
 
 <b>Configuration:</b>
@@ -48,7 +49,7 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 
 days_week      = 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun, -1=Ignore
 
-log_tooltip    = 0=OFF, 1=Basic, 2=More"
+log_tooltip    = 0=OFF, 1=Only exceptions, 2=Basic, 3=More details"
 
 specific_days  = ["YYYY/MM/DD", "YYYY/MM/DD"] - Specific days must have quotation marks
 
