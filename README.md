@@ -65,6 +65,8 @@ config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
 Enabling log, the addon will show on the screen which days are being ignored when replying to the card.
 Or it will display a message that the fuzz range has not met the required minimum condition.
 
+Values:0=OFF, 1=Only exceptions, 2=Basic, 3=More details
+
 <img src="https://i.ibb.co/h9HX2FX/ignored-days.png" alt="ignored-days">
 
 Copyright(C)| Carlos Duarte
