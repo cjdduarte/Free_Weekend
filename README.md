@@ -7,7 +7,7 @@
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- add parameters so that specific groups of decks are not affected by this addon</b>
+<b>- Added log to show only exceptions</b>
 
 <b>About:</b>
 
@@ -65,7 +65,7 @@ config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
 Enabling log, the addon will show on the screen which days are being ignored when replying to the card.
 Or it will display a message that the fuzz range has not met the required minimum condition.
 
-Values:0=OFF, 1=Only exceptions, 2=Basic, 3=More details
+<b>Values: 0=OFF, 1=Only exceptions, 2=Basic, 3=More details</b>
 
 <img src="https://i.ibb.co/h9HX2FX/ignored-days.png" alt="ignored-days">
 
@@ -78,6 +78,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.7 - 2019-01-28
+- add parameters so that specific groups of decks are not affected by this addon
 
 v1.6 - 2018-12-26
 - add parameters so that specific groups of decks are not affected by this addon
