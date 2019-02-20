@@ -9,7 +9,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Added log to show only exceptions</b>
+<b>- Added information about alternate version</b>
 
 <b>About:</b>
 
@@ -81,6 +81,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.7a - 2019-02-21
+- Added information about alternate version
 
 v1.7 - 2019-01-28
 - add parameters so that specific groups of decks are not affected by this addon
