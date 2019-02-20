@@ -2,6 +2,8 @@
 
 <b>Warning: this addon may conflict with other addons that use Anki's scheduler (load balancer, Load Balanced Scheduler, and so on).</b>
 
+If you want to use this addon integrated with Load balance, use this <a href="https://github.com/cjdduarte/Free_Weekend_Load_Balancer">alternate version</a>.
+
 <b>Information 1:</b> The addon does not change past schedules, only new schedules.
 
 <b>Information 2:</b> The addon does not change cards in learning.
