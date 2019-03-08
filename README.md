@@ -39,27 +39,15 @@ The default installation value is to skip <b>Sunday</b> and the log message is <
 
 You can enter more than one day of the week, separated by commas, but <b>remember</b> that this can overwhelm the other days.
 
-<b>Version 2.1</b>
+<b>Anki 2.1</b>
 
 <img src="https://i.ibb.co/Xtk0JLq/image.png" alt="Config">
 
 <img src="https://i.ibb.co/zP49j9G/image.png" alt="Configuration">
 
-<b>Version 2.0</b>
+<b>Anki 2.0</b>
 
-<code>#-------------Configuration------------------
-
-days_week      = 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun, -1=Ignore
-
-log_tooltip    = 0=OFF, 1=Only exceptions, 2=Basic, 3=More details"
-
-specific_days  = ["YYYY/MM/DD", "YYYY/MM/DD"] - Specific days must have quotation marks
-
-Modify here
-
-config = dict(days_week=[6], log_tooltip=0, specific_days=["9999/12/31"])
-
-#-------------Configuration------------------</code>
+<img src="https://i.ibb.co/CV4BkFM/image.png" alt="Config">
 
 <b>It is now possible specific groups of decks are not affected by this addon.</b>
 
@@ -81,6 +69,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.8 - 2019-03-08
+- Improved Anki 2.0 Parameterization
 
 v1.7a - 2019-02-21
 - Added information about alternate version
