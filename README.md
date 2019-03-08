@@ -47,6 +47,8 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 
 <b>Anki 2.0</b>
 
+Open the free_weekend.py file in the add-ons folder and change the parameters
+
 <img src="https://i.ibb.co/wNGX0Rv/image.png" alt="Config">
 
 <b>It is now possible specific groups of decks are not affected by this addon.</b>
