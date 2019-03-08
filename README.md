@@ -1,4 +1,4 @@
-<b>Bug Report:</b> https://github.com/cjdduarte/Free_Weekend
+<b>Bug Report:</b> <a href="https://github.com/cjdduarte/Free_Weekend/issues">https://github.com/cjdduarte/Free_Weekend/issues</a>
 
 <b>Warning: this addon may conflict with other addons that use Anki's scheduler (load balancer, Load Balanced Scheduler, and so on).</b>
 
