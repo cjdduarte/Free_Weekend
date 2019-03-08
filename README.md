@@ -43,11 +43,11 @@ You can enter more than one day of the week, separated by commas, but <b>remembe
 
 <img src="https://i.ibb.co/Xtk0JLq/image.png" alt="Config">
 
-<img src="https://i.ibb.co/zP49j9G/image.png" alt="Configuration">
+<img src="https://i.ibb.co/cDspv4V/image.png" alt="Configuration">
 
 <b>Anki 2.0</b>
 
-<img src="https://i.ibb.co/C5x0M8f/image.png" alt="Config">
+<img src="https://i.ibb.co/wNGX0Rv/image.png" alt="Config">
 
 <b>It is now possible specific groups of decks are not affected by this addon.</b>
 
