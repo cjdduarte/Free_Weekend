@@ -9,7 +9,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Added information about alternate version</b>
+<b>- Updated configuration text</b>
 
 <b>About:</b>
 
@@ -71,6 +71,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.9 - 2019-03-14
+- Updated configuration text
 
 v1.8 - 2019-03-08
 - Improved Anki 2.0 Parameterization
