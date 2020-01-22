@@ -9,7 +9,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Updated configuration text</b>
+<b>- Bug fix: single digit months/days in the specific dates section</b>
 
 <b>About:</b>
 
@@ -72,40 +72,43 @@ Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
 
+v1.10 - 2020-01-22
+- Bug fix: single digit months/days in the specific dates section
+
 v1.9 - 2019-03-14
-- Updated configuration text
++ Updated configuration text
 
 v1.8 - 2019-03-08
-- Improved Anki 2.0 Parameterization
++ Improved Anki 2.0 Parameterization
 
 v1.7a - 2019-02-21
-- Added information about alternate version
++ Added information about alternate version
 
 v1.7 - 2019-01-28
-- add parameters so that specific groups of decks are not affected by this addon
++ add parameters so that specific groups of decks are not affected by this addon
 
 v1.6 - 2018-12-26
-- add parameters so that specific groups of decks are not affected by this addon
++ add parameters so that specific groups of decks are not affected by this addon
 
 v1.5 - 2018-12-14
-- More log options
-- Added parameter for specific days (Anki 2.0)
-- Unified code Anki 2.1 and Anki 2.0
++ More log options
++ Added parameter for specific days (Anki 2.0)
++ Unified code Anki 2.1 and Anki 2.0
 
 v1.4 - 2018-12-08
-- Added parameter for specific days (Anki 2.1)
++ Added parameter for specific days (Anki 2.1)
 
 v1.3 - 2018-12-05
-- Added parameterization in the Addon configuration (Anki 2.1)
++ Added parameterization in the Addon configuration (Anki 2.1)
 
 v1.2 - 2018-12-04
-- Added new log message when fuzz does not satisfy required condition
++ Added new log message when fuzz does not satisfy required condition
 
 v1.1  - 2018-12-04
-- Added log to show ignored days
++ Added log to show ignored days
 
 v1.0 - 2018-12-03
-- Initial Release
++ Initial Release
 
 <b> #### To Do:</b>
 - add limit for deleted days.
