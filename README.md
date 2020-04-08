@@ -9,7 +9,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Bug fix: single digit months/days in the specific dates section</b>
+<b>- Bug fix: functionality temporarily disabled due to incompatibility with version 2.1.24b4</b>
 
 <b>About:</b>
 
@@ -71,6 +71,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.11 - 2020-04-08
+- Bug fix: functionality temporarily disabled due to incompatibility with version 2.1.24b4
 
 v1.10 - 2020-01-22
 - Bug fix: single digit months/days in the specific dates section
