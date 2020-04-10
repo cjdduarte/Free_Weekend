@@ -9,7 +9,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Bug fix: functionality temporarily disabled due to incompatibility with version 2.1.24b4</b>
+<b>- Bug fix: Correct incompatibility with version 2.1.24. Functionality enabled again</b>
 
 <b>About:</b>
 
@@ -71,6 +71,9 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+v1.12 - 2020-04-09
+- Bug fix: Correct incompatibility with version 2.1.24. Functionality enabled again
 
 v1.11 - 2020-04-08
 - Bug fix: functionality temporarily disabled due to incompatibility with version 2.1.24b4
