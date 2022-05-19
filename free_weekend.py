@@ -13,7 +13,14 @@ from aqt import mw
 from anki import version
 ANKI21 = version.startswith("2.1.")
 
-from anki.sched import Scheduler
+try:  # 2.1.45+
+    from anki.scheduler.v1 import Scheduler as SchedulerV1
+    from anki.scheduler.v2 import Scheduler as SchedulerV2
+    from anki.scheduler.v3 import Scheduler as SchedulerV3
+except (ImportError, ModuleNotFoundError):
+    from anki.sched     import Scheduler as SchedulerV1
+    from anki.schedv2   import Scheduler as SchedulerV2
+
 from aqt.utils import tooltip
 
 import aqt
@@ -163,9 +170,8 @@ aqt.deckconf.DeckConf.loadConf      = wrap(aqt.deckconf.DeckConf.loadConf, load_
 aqt.deckconf.DeckConf.saveConf      = wrap(aqt.deckconf.DeckConf.saveConf, save_conf, pos="before")
 
 # Patch Anki 2.0 and Anki 2.1 default scheduler
-anki.sched.Scheduler._fuzzedIvl = wrap(anki.sched.Scheduler._fuzzedIvl, load_balanced_ivl, 'around')
+SchedulerV1._fuzzedIvl = wrap(SchedulerV1._fuzzedIvl, load_balanced_ivl, 'around')
 
 # Patch Anki 2.1 experimental v2 scheduler
 if version.startswith("2.1"):
-    from anki.schedv2 import Scheduler
-    anki.schedv2.Scheduler._fuzzedIvl = wrap(anki.schedv2.Scheduler._fuzzedIvl, load_balanced_ivl, 'around')
+    SchedulerV2._fuzzedIvl = wrap(SchedulerV2._fuzzedIvl, load_balanced_ivl, 'around')

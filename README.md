@@ -1,5 +1,7 @@
 <b>Bug Report:</b> <a href="https://github.com/cjdduarte/Free_Weekend/issues">https://github.com/cjdduarte/Free_Weekend/issues</a>
 
+<b>#### DOES NOT WORK ON V3</b>
+
 <b>Warning: this addon may conflict with other addons that use Anki's scheduler (load balancer, Load Balanced Scheduler, and so on).</b>
 
 If you want to use this addon integrated with Load balance, use this <a href="https://github.com/cjdduarte/Free_Weekend_Load_Balancer">alternate version</a>.
@@ -9,7 +11,7 @@ If you want to use this addon integrated with Load balance, use this <a href="ht
 <b>Information 2:</b> The addon does not change cards in learning.
 
 <b>#### New Change:</b>
-<b>- Bug fix: Correct incompatibility with version 2.1.24. Functionality enabled again</b>
+<b>+ Functions update for Anki 2.1.50+ (DOES NOT WORK ON V3)</b>
 
 <b>About:</b>
 
@@ -71,6 +73,10 @@ License | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
 Source in | https://github.com/cjdduarte/Free_Weekend
 
 <b> #### Change Log:</b>
+
+
+v1.13 - 2022-05-18
++ Functions update for Anki 2.1.50+ (DOES NOT WORK ON V3)
 
 v1.12 - 2020-04-09
 - Bug fix: Correct incompatibility with version 2.1.24. Functionality enabled again
